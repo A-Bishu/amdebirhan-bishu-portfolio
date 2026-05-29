@@ -40,12 +40,24 @@ nav ul li a:hover {
 }
 
 section {
-    margin: 20px 0;
-    padding: 30px;
+    margin: 28px 0;
+    padding: 32px;
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #e5e7eb;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.project {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
 }
 
 h1, h2, h3 {
