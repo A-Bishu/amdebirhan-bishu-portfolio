@@ -337,47 +337,22 @@ p {
     background: #f8fafc;
 }
 
-.contact-card a, footer a, section a {
+.contact-card a, footer a, section a:not(.button):not(.button-secondary) {
     color: var(--primary);
     font-weight: 800;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 18px;
-}
-
-form label {
-    font-weight: 800;
-}
-
-form input, form textarea, form button {
-    padding: 13px;
-    border: 1px solid #cbd5e1;
-    border-radius: 12px;
-    font-size: 1rem;
-}
-
-form textarea {
-    min-height: 150px;
-}
-
-form button {
-    background-color: #111827;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 900;
+.hero-panel a {
+    color: #dbeafe;
 }
 
 /* StyleMirror Screenshot Gallery */
 .screenshot-gallery {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
-    gap: 22px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
     align-items: start;
-    margin: 24px 0 34px !important;
+    margin: 24px 0 34px;
 }
 
 .screenshot-card {
@@ -394,16 +369,16 @@ form button {
 
 .screenshot-card img,
 .project .screenshot-gallery .screenshot-card img {
-    display: block !important;
-    width: 100% !important;
-    max-width: 240px !important;
-    height: 420px !important;
-    max-height: 420px !important;
-    object-fit: contain !important;
-    margin: 0 auto !important;
-    padding: 8px !important;
-    background: #f8fafc !important;
-    border-radius: 18px !important;
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: 420px;
+    max-height: 420px;
+    object-fit: contain;
+    margin: 0 auto;
+    padding: 8px;
+    background: #f8fafc;
+    border-radius: 18px;
 }
 
 .screenshot-card figcaption {
@@ -456,7 +431,7 @@ footer p {
     }
 
     .screenshot-gallery {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
 
     .screenshot-card {
@@ -465,8 +440,58 @@ footer p {
 
     .screenshot-card img,
     .project .screenshot-gallery .screenshot-card img {
-        max-width: 220px !important;
-        height: 390px !important;
-        max-height: 390px !important;
+        max-width: 220px;
+        height: 390px;
+        max-height: 390px;
+    }
+}
+
+
+/* DoseBridge Project Gallery */
+.project-featured {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.dosebridge-project {
+    border-color: #bbf7d0;
+}
+
+.dosebridge-project .tag {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.dosebridge-gallery .screenshot-card {
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.dosebridge-gallery .screenshot-card img {
+    background: linear-gradient(180deg, #eaf7ed 0%, #ffffff 100%);
+    border: 1px solid #d9f2dc;
+}
+
+
+.dosebridge-gallery .image-missing::before {
+    content: attr(data-shot) " screenshot";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 240px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 18px;
+    border-radius: 18px;
+    border: 1px dashed #86efac;
+    background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
+    color: #166534;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .dosebridge-gallery .image-missing::before {
+        max-width: 220px;
+        height: 390px;
     }
 }

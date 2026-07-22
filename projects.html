@@ -26,7 +26,7 @@
             <div>
                 <p class="eyebrow">Featured Work</p>
                 <h1>AI products, mobile apps, and full-stack systems built from idea to launch.</h1>
-                <p class="lead">A selection of product-focused projects built with React Native, React, Node.js, Supabase, PostgreSQL, Cloudinary, Render, and OpenAI technologies.</p>
+                <p class="lead">A selection of product-focused projects built with React Native, React, Node.js, Supabase, PostgreSQL, Cloudinary, Render, and OpenAI technologies, including DoseBridge, a TestFlight-ready care coordination app.</p>
             </div>
             <div class="hero-panel">
                 <h2>Primary Focus</h2>
@@ -76,6 +76,83 @@
 
                 <h3>Architecture</h3>
                 <div class="architecture">React Native App -> Node.js / Express API -> Supabase Auth -> PostgreSQL -> OpenAI Insights -> Render Deployment -> TestFlight Beta</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="project project-featured dosebridge-project">
+                <div class="project-header">
+                    <div>
+                        <p class="eyebrow">TestFlight Product</p>
+                        <h2>DoseBridge</h2>
+                    </div>
+                    <span class="project-status">Beta Testing</span>
+                </div>
+
+                <p class="lead">Medication and care coordination app that helps patients track doses, receive reminders, request meal and grocery support, and safely share care visibility with trusted caregivers.</p>
+
+                <div class="project-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Expo</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">OpenAI API</span>
+                    <span class="tag">Render</span>
+                    <span class="tag">TestFlight</span>
+                    <span class="tag">Role-Based Access</span>
+                </div>
+
+                <div class="grid">
+                    <div class="card metric"><strong>4</strong><p>Care spaces: patient app, caregiver space, meal support operator, and private beta admin.</p></div>
+                    <div class="card metric"><strong>7</strong><p>Day food rhythm with grocery planning and medication-aware meal guidance.</p></div>
+                    <div class="card metric"><strong>100+</strong><p>Prepared meal options with care-focused filters, images, pricing, and support request review.</p></div>
+                    <div class="card metric"><strong>QA</strong><p>Production auth, caregiver permissions, role gates, reminder behavior, and TestFlight workflows validated.</p></div>
+                </div>
+
+                <h3>DoseBridge Screenshots</h3>
+                <div class="grid screenshot-gallery dosebridge-gallery">
+                    <figure class="screenshot-card" data-shot="Care Today">
+                        <img src="styles/dosebridge/care-today.png" alt="DoseBridge Care Today home screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
+                        <figcaption><strong>Care Today</strong><br>Personalized home screen with next dose, GPT-backed insight, quick actions, and care navigation.</figcaption>
+                    </figure>
+                    <figure class="screenshot-card" data-shot="Meal Support">
+                        <img src="styles/dosebridge/meal-support.png" alt="DoseBridge meal support request screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
+                        <figcaption><strong>Meal Support</strong><br>Prepared meal ordering flow with images, item review, pricing, and request confirmation.</figcaption>
+                    </figure>
+                    <figure class="screenshot-card" data-shot="Grocery Support">
+                        <img src="styles/dosebridge/grocery-support.png" alt="DoseBridge grocery support screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
+                        <figcaption><strong>Grocery Support</strong><br>Separate grocery support workflow for shopping help, request details, and recent request tracking.</figcaption>
+                    </figure>
+                    <figure class="screenshot-card" data-shot="Caregiver Space">
+                        <img src="styles/dosebridge/caregiver-space.png" alt="DoseBridge caregiver shared care screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
+                        <figcaption><strong>Caregiver Space</strong><br>Shared care board with medication visibility, alerts, meal requests, and permission-based access.</figcaption>
+                    </figure>
+                    <figure class="screenshot-card" data-shot="Meal Support Operator">
+                        <img src="styles/dosebridge/operator-dashboard.png" alt="DoseBridge meal support operator dashboard" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
+                        <figcaption><strong>Meal Support Operator</strong><br>Operator dashboard for queue review, request claiming, status updates, and handoff tracking.</figcaption>
+                    </figure>
+                    <figure class="screenshot-card" data-shot="Private Beta Admin">
+                        <img src="styles/dosebridge/admin-console.png" alt="DoseBridge admin console screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
+                        <figcaption><strong>Private Beta Admin</strong><br>Admin console for role assignments, operator scopes, platform health, and beta readiness controls.</figcaption>
+                    </figure>
+                </div>
+
+                <h3>My Role</h3>
+                <p>Founder and Full Stack Developer. I designed the mobile UX, built the React Native app, implemented backend APIs, integrated Supabase auth and data storage, connected OpenAI-backed care insights, and deployed the API to Render.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Medication scheduling, dose logging, snooze/follow-up reminders, and notification QA workflows.</li>
+                    <li>Caregiver invitation, shared care permissions, multi-patient isolation, and read-only care boards.</li>
+                    <li>Medication-aware meal ideas, grocery list generation, and separate meal/grocery support request flows.</li>
+                    <li>Meal support operator queue with role-gated claim, update, handoff, and request lifecycle management.</li>
+                    <li>Private beta admin console for operator scopes, role assignments, and internal readiness checks.</li>
+                </ul>
+
+                <h3>Architecture</h3>
+                <div class="architecture">React Native / Expo App -> Node.js / Express API -> Supabase Auth + PostgreSQL -> OpenAI Care Insights -> Render Deployment -> TestFlight Beta</div>
             </div>
         </section>
 
@@ -181,7 +258,7 @@
                 </div>
                 <div class="card">
                     <h3>DoseBridge Healthcare Workflows</h3>
-                    <p>Medication assistant and caregiver support workflows with reminders, shared care access, GPT-backed insights, and meal/grocery support.</p>
+                    <p>Medication and care coordination app with dose reminders, caregiver sharing, AI care insights, meal support, grocery support, and role-based operator workflows.</p>
                     <div class="project-tags">
                         <span class="tag">React Native</span>
                         <span class="tag">Express</span>
