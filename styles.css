@@ -64,6 +64,13 @@ nav ul li a:hover {
     color: #93c5fd;
 }
 
+nav ul li a[aria-current="page"] {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #60a5fa;
+    text-underline-offset: 7px;
+}
+
 main, section {
     width: min(1120px, calc(100% - 32px));
     margin: 0 auto;
@@ -192,6 +199,17 @@ section {
 .button-secondary:hover {
     border-color: #93c5fd;
     transform: translateY(-2px);
+}
+
+.text-button {
+    color: var(--primary);
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.text-button:hover {
+    color: var(--primary-dark);
+    border-color: #60a5fa;
 }
 
 h1, h2, h3, h4 {
