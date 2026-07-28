@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Featured projects by Amdebirhan Bishu including DoseBridge, StyleMirror AI, SurfIntel, and a Sports Prediction Platform.">
+    <meta name="description" content="Selected engineering projects by Amdebirhan Bishu: DoseBridge, StyleMirror, and SportyfiAI / GameLensAI.">
     <title>Projects | Amdebirhan Bishu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -24,262 +24,105 @@
     <main>
         <section class="hero">
             <div>
-                <p class="eyebrow">Featured Work</p>
-                <h1>AI products, mobile apps, and full-stack systems built from idea to launch.</h1>
-                <p class="lead">A selection of product-focused projects built with React Native, React, Node.js, Supabase, PostgreSQL, Cloudinary, Render, and OpenAI technologies, including DoseBridge, a TestFlight-ready care coordination app.</p>
+                <p class="eyebrow">Selected Work</p>
+                <h1>Products built across mobile, backend, data, cloud, and applied AI.</h1>
+                <p class="lead">These three projects show how I turn complex workflows into clear user experiences backed by real APIs, relational data, cloud services, and tested recovery paths.</p>
             </div>
             <div class="hero-panel">
-                <h2>Primary Focus</h2>
-                <p>DoseBridge is the current flagship product because it combines mobile engineering, healthcare UX, reminders, caregiver access, meal support, OpenAI insights, backend APIs, cloud deployment, and real TestFlight beta testing.</p>
+                <h2>My Role</h2>
+                <p>Independent software engineer responsible for product design, frontend and mobile development, backend APIs, data architecture, AI integration, testing, deployment, and release preparation.</p>
             </div>
         </section>
 
         <section>
-            <div class="project">
+            <article class="project project-featured dosebridge-project">
                 <div class="project-header">
                     <div>
-                        <p class="eyebrow">Flagship Product</p>
+                        <p class="eyebrow">Medication-First Care Coordination</p>
                         <h2>DoseBridge</h2>
                     </div>
-                    <span class="project-status">TestFlight Beta</span>
+                    <span class="project-status">Release Preparation</span>
                 </div>
-
-                <p class="lead">Medication and care support app that helps users organize medications, track scheduled doses, receive voice reminders, coordinate with caregivers, and request meal or grocery support.</p>
-
+                <p class="lead">An Expo and React Native application for medication schedules, reminders, shared care spaces, meal support, grocery workflows, and safety-aware AI guidance.</p>
                 <div class="project-tags">
-                    <span class="tag">React Native</span>
-                    <span class="tag">Expo</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">Supabase Auth</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">OpenAI</span>
-                    <span class="tag">Render</span>
-                    <span class="tag">TestFlight</span>
+                    <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">OpenAI</span><span class="tag">Render</span>
                 </div>
-
                 <div class="grid">
-                    <div class="card metric"><strong>4</strong><p>Core care loops: medication reminders, dose tracking, caregiver sharing, and meal/grocery support.</p></div>
-                    <div class="card metric"><strong>Voice</strong><p>Local reminder sounds with follow-up alerts and TestFlight notification QA.</p></div>
-                    <div class="card metric"><strong>AI</strong><p>GPT-backed care insights and structured support workflows.</p></div>
-                    <div class="card metric"><strong>Beta</strong><p>External TestFlight testing with real account, reminder, and caregiver flows.</p></div>
+                    <div class="card"><h3>Care workflows</h3><p>Medication schedules and dose actions connect to caregiver visibility, meal requests, and grocery support.</p></div>
+                    <div class="card"><h3>Backend boundaries</h3><p>Validation, ownership checks, request context, and synchronized caregiver state support dependable collaboration.</p></div>
+                    <div class="card"><h3>Cloud delivery</h3><p>The Node.js and Express API uses PostgreSQL and Supabase services and is deployed on Render.</p></div>
                 </div>
-
-                <h3>Key Features</h3>
-                <ul>
-                    <li>Medication list, schedules, dose history, taken/skipped/snoozed actions, and voice reminder follow-ups.</li>
-                    <li>Care Today home screen that surfaces the next care action and recent AI insight.</li>
-                    <li>Caregiver access with invitation, permission presets, shared care boards, timelines, and alerts.</li>
-                    <li>Meal and grocery support workflows with prepared meal ideas, grocery list generation, images, quantities, and order review.</li>
-                    <li>Reports, notification center, beta QA dashboard, and production API health checks.</li>
-                </ul>
-
-                <h3>Architecture</h3>
-                <div class="architecture">React Native App -> Node.js / Express API -> Supabase Auth -> PostgreSQL -> OpenAI Insights -> Render Deployment -> TestFlight Beta</div>
-            </div>
-        </section>
-
-        <section>
-            <div class="project project-featured dosebridge-project">
-                <div class="project-header">
-                    <div>
-                        <p class="eyebrow">TestFlight Product</p>
-                        <h2>DoseBridge</h2>
-                    </div>
-                    <span class="project-status">Beta Testing</span>
-                </div>
-
-                <p class="lead">Medication and care coordination app that helps patients track doses, receive reminders, request meal and grocery support, and safely share care visibility with trusted caregivers.</p>
-
-                <div class="project-tags">
-                    <span class="tag">React Native</span>
-                    <span class="tag">Expo</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">Supabase</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">OpenAI API</span>
-                    <span class="tag">Render</span>
-                    <span class="tag">TestFlight</span>
-                    <span class="tag">Role-Based Access</span>
-                </div>
-
-                <div class="grid">
-                    <div class="card metric"><strong>4</strong><p>Care spaces: patient app, caregiver space, meal support operator, and private beta admin.</p></div>
-                    <div class="card metric"><strong>7</strong><p>Day food rhythm with grocery planning and medication-aware meal guidance.</p></div>
-                    <div class="card metric"><strong>100+</strong><p>Prepared meal options with care-focused filters, images, pricing, and support request review.</p></div>
-                    <div class="card metric"><strong>QA</strong><p>Production auth, caregiver permissions, role gates, reminder behavior, and TestFlight workflows validated.</p></div>
-                </div>
-
-                <h3>DoseBridge Screenshots</h3>
+                <h3>Product Screenshots</h3>
                 <div class="grid screenshot-gallery dosebridge-gallery">
-                    <figure class="screenshot-card" data-shot="Care Today">
-                        <img src="styles/dosebridge/care-today.png" alt="DoseBridge Care Today home screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
-                        <figcaption><strong>Care Today</strong><br>Personalized home screen with next dose, GPT-backed insight, quick actions, and care navigation.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card" data-shot="Meal Support">
-                        <img src="styles/dosebridge/meal-support.png" alt="DoseBridge meal support request screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
-                        <figcaption><strong>Meal Support</strong><br>Prepared meal ordering flow with images, item review, pricing, and request confirmation.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card" data-shot="Grocery Support">
-                        <img src="styles/dosebridge/grocery-support.png" alt="DoseBridge grocery support screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
-                        <figcaption><strong>Grocery Support</strong><br>Separate grocery support workflow for shopping help, request details, and recent request tracking.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card" data-shot="Caregiver Space">
-                        <img src="styles/dosebridge/caregiver-space.png" alt="DoseBridge caregiver shared care screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
-                        <figcaption><strong>Caregiver Space</strong><br>Shared care board with medication visibility, alerts, meal requests, and permission-based access.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card" data-shot="Meal Support Operator">
-                        <img src="styles/dosebridge/operator-dashboard.png" alt="DoseBridge meal support operator dashboard" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
-                        <figcaption><strong>Meal Support Operator</strong><br>Operator dashboard for queue review, request claiming, status updates, and handoff tracking.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card" data-shot="Private Beta Admin">
-                        <img src="styles/dosebridge/admin-console.png" alt="DoseBridge admin console screen" onerror="this.closest('.screenshot-card').classList.add('image-missing'); this.remove();">
-                        <figcaption><strong>Private Beta Admin</strong><br>Admin console for role assignments, operator scopes, platform health, and beta readiness controls.</figcaption>
-                    </figure>
+                    <figure class="screenshot-card" data-shot="Care Today"><img src="styles/dosebridge/care-today.png" alt="DoseBridge Care Today screen"><figcaption><strong>Care Today</strong>Prioritized medication and care actions in one focused view.</figcaption></figure>
+                    <figure class="screenshot-card" data-shot="Meal Support"><img src="styles/dosebridge/meal-support.png" alt="DoseBridge meal support screen"><figcaption><strong>Meal Support</strong>Prepared meal requests with item review and confirmation.</figcaption></figure>
+                    <figure class="screenshot-card" data-shot="Grocery Support"><img src="styles/dosebridge/grocery-support.png" alt="DoseBridge grocery support screen"><figcaption><strong>Grocery Support</strong>Shopping support requests and recent-request tracking.</figcaption></figure>
+                    <figure class="screenshot-card" data-shot="Caregiver Space"><img src="styles/dosebridge/caregiver-space.png" alt="DoseBridge caregiver space"><figcaption><strong>Caregiver Space</strong>Permission-aware access to shared care information.</figcaption></figure>
                 </div>
-
-                <h3>My Role</h3>
-                <p>Founder and Full Stack Developer. I designed the mobile UX, built the React Native app, implemented backend APIs, integrated Supabase auth and data storage, connected OpenAI-backed care insights, and deployed the API to Render.</p>
-
-                <h3>Key Features</h3>
-                <ul>
-                    <li>Medication scheduling, dose logging, snooze/follow-up reminders, and notification QA workflows.</li>
-                    <li>Caregiver invitation, shared care permissions, multi-patient isolation, and read-only care boards.</li>
-                    <li>Medication-aware meal ideas, grocery list generation, and separate meal/grocery support request flows.</li>
-                    <li>Meal support operator queue with role-gated claim, update, handoff, and request lifecycle management.</li>
-                    <li>Private beta admin console for operator scopes, role assignments, and internal readiness checks.</li>
-                </ul>
-
                 <h3>Architecture</h3>
-                <div class="architecture">React Native / Expo App -> Node.js / Express API -> Supabase Auth + PostgreSQL -> OpenAI Care Insights -> Render Deployment -> TestFlight Beta</div>
-            </div>
+                <div class="architecture">Expo / React Native → Node.js / Express → Supabase Auth + PostgreSQL → OpenAI guidance → Render</div>
+                <div class="cta-row"><a href="https://github.com/A-Bishu/dosebridge-portfolio" class="button" target="_blank" rel="noopener noreferrer">Read Engineering Case Study</a></div>
+            </article>
         </section>
 
         <section>
-            <div class="project">
+            <article class="project">
                 <div class="project-header">
                     <div>
-                        <p class="eyebrow">Case Study</p>
-                        <h2>StyleMirror AI</h2>
+                        <p class="eyebrow">AI Hairstyle Discovery</p>
+                        <h2>StyleMirror</h2>
                     </div>
                     <span class="project-status">Active Development</span>
                 </div>
-
-                <p class="lead">AI-powered hairstyle discovery and virtual try-on platform that helps users explore, compare, save, and preview hairstyles before making styling decisions.</p>
-
+                <p class="lead">A mobile-first hairstyle discovery experience covering photo guidance, AI generation, durable job recovery, result comparison, cultural collections, and salon-ready briefs.</p>
                 <div class="project-tags">
-                    <span class="tag">React Native</span>
-                    <span class="tag">Expo</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">Supabase</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">Cloudinary</span>
-                    <span class="tag">OpenAI Image Models</span>
-                    <span class="tag">Render</span>
-                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI Images</span><span class="tag">Cloudinary</span><span class="tag">Automated Tests</span>
                 </div>
-
                 <div class="grid">
-                    <div class="card metric"><strong>300+</strong><p>Hairstyle prompts and app-ready style options planned across core and premium collections.</p></div>
-                    <div class="card metric"><strong>50+</strong><p>Bridal and premium hairstyle concepts for high-intent users.</p></div>
-                    <div class="card metric"><strong>100+</strong><p>Cultural and global hairstyle categories designed for inclusive discovery.</p></div>
-                    <div class="card metric"><strong>6</strong><p>Core product flows: onboarding, try-on, collections, favorites, voting, and Pro subscription.</p></div>
+                    <div class="card"><h3>Durable generation</h3><p>Long-running image jobs can recover state and return users to completed results after interruptions.</p></div>
+                    <div class="card"><h3>Product systems</h3><p>Entitlements, purchases, caching, telemetry, and recovery logic support the complete experience.</p></div>
+                    <div class="card"><h3>Focused validation</h3><p>Thirty-two focused test files cover important workflow and system behavior.</p></div>
                 </div>
-
                 <h3>Product Screenshots</h3>
                 <div class="grid screenshot-gallery">
-                    <figure class="screenshot-card">
-                        <img src="styles/Find Your Look Screenshot.png" alt="StyleMirror AI Find Your Look screen">
-                        <figcaption><strong>AI Try-On Flow</strong><br>Users start with one photo and preview hairstyle transformations.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="styles/Global beauty Screensho..png" alt="StyleMirror AI Global Beauty collections screen">
-                        <figcaption><strong>Global Beauty Collections</strong><br>Curated cultural, bridal, men’s, and premium hairstyle collections.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="styles/African Braids.png" alt="StyleMirror AI African Braids collection screen">
-                        <figcaption><strong>Cultural Style Library</strong><br>Dedicated collections for African braids and global hairstyle categories.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="styles/Start a style Battle Screenshot.png" alt="StyleMirror AI Start a Style Battle screen">
-                        <figcaption><strong>Social Voting</strong><br>Style battles allow users to compare looks and collect votes.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="styles/Unlock your full.png" alt="StyleMirror AI premium unlock screen">
-                        <figcaption><strong>Premium Experience</strong><br>Subscription-ready UX for Pro tools, HD exports, and advanced AI variants.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="styles/Pro Monthly Screenshot.png" alt="StyleMirror AI Pro Monthly pricing screen">
-                        <figcaption><strong>Monetization</strong><br>Monthly and yearly Pro pricing designed for recurring revenue.</figcaption>
-                    </figure>
+                    <figure class="screenshot-card"><img src="styles/Find Your Look Screenshot.png" alt="StyleMirror Find Your Look screen"><figcaption><strong>Photo Guidance</strong>Users start with one photo and clear input guidance.</figcaption></figure>
+                    <figure class="screenshot-card"><img src="styles/Global beauty Screensho..png" alt="StyleMirror global beauty collections"><figcaption><strong>Global Collections</strong>Discovery across cultural, bridal, men’s, and premium styles.</figcaption></figure>
+                    <figure class="screenshot-card"><img src="styles/Start a style Battle Screenshot.png" alt="StyleMirror style comparison screen"><figcaption><strong>Style Comparison</strong>Users compare looks and gather feedback before deciding.</figcaption></figure>
+                    <figure class="screenshot-card"><img src="styles/Unlock your full.png" alt="StyleMirror premium screen"><figcaption><strong>Premium Experience</strong>Entitlement-aware access to advanced features and generations.</figcaption></figure>
                 </div>
-
-                <h3>My Role</h3>
-                <p>Founder and Full Stack Developer. I designed the product experience, built mobile screens, created backend APIs, integrated AI image-generation workflows, configured cloud image storage, and deployed the backend infrastructure.</p>
-
-                <h3>Key Features</h3>
-                <ul>
-                    <li>AI hairstyle generation and virtual try-on experience.</li>
-                    <li>Personalized hairstyle recommendations and style discovery flows.</li>
-                    <li>Cultural hairstyle collections, bridal styles, and global beauty categories.</li>
-                    <li>Favorites, saved looks, galleries, and shareable comparisons.</li>
-                    <li>Social engagement features including style battles and voting.</li>
-                    <li>Subscription-ready Pro experience with premium collections, HD exports, and extra AI generations.</li>
-                    <li>Cloud image storage and delivery using Cloudinary.</li>
-                    <li>Backend deployment using Render and Supabase PostgreSQL data storage.</li>
-                </ul>
-
                 <h3>Architecture</h3>
-                <div class="architecture">React Native App -> Node.js / Express API -> Supabase PostgreSQL -> OpenAI Image Models -> Cloudinary Image Storage -> Render Deployment</div>
-
-                <h3>Engineering Challenges Solved</h3>
-                <ul>
-                    <li>Designed prompt-engineering workflows to improve hairstyle generation quality and consistency.</li>
-                    <li>Built image upload, storage, and delivery workflows for user-generated photos and AI results.</li>
-                    <li>Structured a mobile-first user journey from onboarding to try-on to premium conversion.</li>
-                    <li>Created scalable product architecture for collections, favorites, recommendations, voting, and subscriptions.</li>
-                </ul>
-            </div>
+                <div class="architecture">React Native → Node.js services → OpenAI image workflows → Cloudinary media delivery → PostgreSQL / Supabase</div>
+                <div class="cta-row"><a href="https://github.com/A-Bishu/stylemirror-portfolio" class="button" target="_blank" rel="noopener noreferrer">Read Engineering Case Study</a></div>
+            </article>
         </section>
 
         <section>
-            <h2>Additional Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>SurfIntel</h3>
-                    <p>Surf session analysis platform with video workflows, coaching insights, and AI-assisted surf intelligence.</p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">AI Insights</span>
+            <article class="project">
+                <div class="project-header">
+                    <div>
+                        <p class="eyebrow">Explainable Sports Analytics</p>
+                        <h2>SportyfiAI / GameLensAI</h2>
                     </div>
+                    <span class="project-status">Case Study</span>
                 </div>
-                <div class="card">
-                    <h3>DoseBridge Healthcare Workflows</h3>
-                    <p>Medication and care coordination app with dose reminders, caregiver sharing, AI care insights, meal support, grocery support, and role-based operator workflows.</p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">OpenAI</span>
-                    </div>
+                <p class="lead">A responsive React and Node.js analytics platform with match boards, explainable predictions, line shopping, position tracking, alerts, and historical performance analysis.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">Sports Data</span><span class="tag">Analytics</span>
                 </div>
-                <div class="card">
-                    <h3>Sports Prediction Platform</h3>
-                    <p>Sports analytics application focused on match prediction, data integration, and AI-generated insights.</p>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
+                <div class="grid">
+                    <div class="card"><h3>Explainable outputs</h3><p>Prediction views expose supporting context instead of presenting a score without reasoning.</p></div>
+                    <div class="card"><h3>Odds history</h3><p>PostgreSQL-backed snapshots support line shopping and closing-line performance analysis.</p></div>
+                    <div class="card"><h3>Honest reporting</h3><p>Metrics distinguish hit rate, tracked ROI, lineup state, closing-line performance, and sample quality.</p></div>
                 </div>
-            </div>
+                <h3>Architecture</h3>
+                <div class="architecture">Responsive React UI → Node.js API → PostgreSQL odds snapshots → prediction, alert, and reporting workflows</div>
+                <div class="cta-row"><a href="https://github.com/A-Bishu/sportyfiai-portfolio" class="button" target="_blank" rel="noopener noreferrer">Read Engineering Case Study</a></div>
+            </article>
         </section>
     </main>
 
     <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/amdebirhan-bishu-15738a21b" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="https://github.com/A-Bishu" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        <p>Chicago, IL &bull; <a href="mailto:amde.kbishu@gmail.com">Email</a> &bull; <a href="https://www.linkedin.com/in/amdebirhan-bishu-15738a21b" target="_blank" rel="noopener noreferrer">LinkedIn</a> &bull; <a href="https://github.com/A-Bishu" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
 </body>
 </html>
